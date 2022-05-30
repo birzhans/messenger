@@ -1,0 +1,11 @@
+<%= form_for [@chat, Message.new] do |f| %>
+  <div class="row">
+    <div class="col-8">
+      <%= f.text_field :body, class: 'form-control' %>
+    </div>
+
+    <div class="col-4">
+      <%= f.submit 'Send', class: 'btn btn-primary' %>
+    </div>
+<% end %>
+  
