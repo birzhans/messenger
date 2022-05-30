@@ -5,4 +5,8 @@ class Chat < ApplicationRecord
   has_many :messages, dependent: :destroy
 
   validates :first_user_id, uniqueness: { scope: :second_user_id }
+
+  def with(current_user)
+    (first_user == current_user) ? second_user : first_user
+  end
 end

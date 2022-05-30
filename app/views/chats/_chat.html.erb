@@ -1,0 +1,5 @@
+<div class="rounded gray p-3 mb-2">
+  <%= link_to chats_path(id: chat.id), class: chat_preview_class(@chat, chat) do %>
+    <%= chat.with(current_user).username %>
+  <% end %>
+</div>
