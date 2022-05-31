@@ -1,5 +1,6 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+@import './chat.scss';
 
 a {
   text-decoration: none;
@@ -10,7 +11,7 @@ textarea {
 }
 
 .gray {
-  background-color: rgb(234, 231, 231);
+  background-color: rgb(244, 238, 238);
   color: black;
 }
 
@@ -22,22 +23,3 @@ textarea {
   max-width: 1000px;
   margin-top: 2rem;
 }
-
-.my-message {
-  background-color: #f5f5f5;
-  width: fit-content;
-  text-align: right;
-}
-
-.other-message {
-  background-color: #637afe;
-  color: white;
-  text-align: left;
-  width: fit-content;
-}
-
-// .message-main-sender {
-//   padding: 3px 20px !important;
-//   margin-left: 40% !important;
-//   max-width: 60%;
-// }

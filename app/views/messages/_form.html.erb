@@ -1,13 +1,14 @@
-<%= form_for [@chat, Message.new] do |f| %>
-  <div class="row">
-    <div class="col-10">
-      <%= f.text_area :body, class: 'form-control border-none p-2' %>
-    </div>
+<div class="message-form">
+  <%= form_for [@chat, Message.new] do |f| %>
+    <div class="row">
+      <div class="col-10">
+        <%= f.text_area :body, class: 'form-control border-none p-2' %>
+      </div>
 
-    <div class="col-2">
-      <%= button_tag type: "submit", class: "btn btn-primary" do %>
-        <i class="bi bi-send"></i>
-      <% end %>
-    </div>
-<% end %>
-  
+      <div class="col-2">
+        <%= button_tag type: "submit", class: "btn btn-primary" do %>
+          <i class="bi bi-send"></i>
+        <% end %>
+      </div>
+  <% end %>
+</div>

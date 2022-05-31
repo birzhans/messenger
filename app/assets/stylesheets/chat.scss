@@ -1,0 +1,33 @@
+.messages {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+  width: fit-content;
+  max-width: 50%;
+  word-wrap: break-word;
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+
+.my-message {
+  background-color: white;
+  float: right;
+  text-align: right;
+}
+
+.other-message {
+  background-color: #637afe;
+  color: white;
+  float: left;
+  text-align: left;
+}
+
+.message-form {
+}

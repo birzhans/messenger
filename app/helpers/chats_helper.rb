@@ -4,6 +4,6 @@ module ChatsHelper
   end
 
   def message_class(message, current_user)
-    "rounded p-2 col #{(message.user == current_user) ? 'my-message' : 'other-message'}"
+    "rounded p-2 col message #{(message.user == current_user) ? 'my-message' : 'other-message'}"
   end
 end
