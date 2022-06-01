@@ -3,8 +3,13 @@
     <%= render @chats %>
   </div>
 
-  <div class="col-9 gray rounded p-3 messages" data-chat-target="messages">
-    <%= render @messages %>
-    <%= render 'messages/form' %>
+  <div class="col-9 gray rounded p-3">
+    <div class="messages" data-chat-target="messages">
+      <%= render @messages %>
+    </div>
+
+    <div class="message-form">
+      <%= render 'messages/form' %>
+    </div>
   </div>
 </div>
