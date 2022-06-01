@@ -1,0 +1,6 @@
+<h2>Profile</h2>
+<p>Email: <%= current_user.email %></p>
+<p>Username: <%= current_user.username %></p>
+<p>Registration date: <%= current_user.created_at.strftime('%d-%m-%Y') %></p>
+
+<%= link_to 'Change password', edit_user_password_path %>
